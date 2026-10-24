@@ -10,6 +10,9 @@ This repository is the raw data + licence for the dataset published at
 | File | Rows | Size | What it is |
 | --- | ---: | ---: | --- |
 | `data/salary-ranges-full.csv` | 8,039 | ~1.7 MB | one row per posting that publishes a range |
+| `data/publication-by-company.csv` | 146 | 4 KB | per-company disclosure rate (same denominator as numerator) |
+| `data/freshness.json` | — | 10 KB | how old the postings are, by board and company |
+| `data/lookup.json` | 152 | 37 KB | per-company medians, ready for a UI |
 
 Columns: `company, ats, title, location, remote, role_family, salary_usd_low, salary_usd_high, salary_usd_mid, posted_at, url, salary_currency, salary_local_low, salary_local_high`.
 
