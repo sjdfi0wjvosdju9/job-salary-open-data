@@ -60,10 +60,10 @@ python -m salaryranges stats
 ## Honest limits
 
 - These are **published** ranges, not what anyone was actually paid.
-- ~57% of postings publish nothing; they are absent, not zero.
+- About 57% of postings publish nothing; they are absent, not zero.
 - Level bands are common: when a posting lists several (e.g. L4 and L5), the **first band** is used.
 - Implausible values (under $5k or over $5M a year after normalisation) are **dropped entirely** rather than clamped, so the tail is missing rather than wrong.
-- Currency conversion uses a daily rate; the rate date is in the site JSON, and the original local-currency range is kept in `salary_local_*`.
+- Currency conversion uses a daily rate; the original local-currency range is kept in `salary_local_*`.
 
 ## Licence
 
