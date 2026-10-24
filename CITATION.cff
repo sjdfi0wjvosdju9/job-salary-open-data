@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Public salary ranges from 266 companies (weekly snapshot)"
+abstract: >-
+  Every job posting that states a pay range, collected from 266 companies' own
+  public job-board APIs (Greenhouse, Lever, Ashby, Workable, Personio, Workday)
+  and normalised to annual USD with live FX rates. The original currency and
+  local amount are kept in every row. Regenerated weekly; each snapshot is
+  published as a tagged GitHub release.
+authors:
+  - name: "Radar Labs"
+    website: "https://sjdfi0wjvosdju9.github.io"
+type: dataset
+license: CC-BY-4.0
+license-url: "https://creativecommons.org/licenses/by/4.0/"
+repository-code: "https://github.com/sjdfi0wjvosdju9/job-salary-open-data"
+url: "https://sjdfi0wjvosdju9.github.io/salary-data.html"
+keywords:
+  - salary
+  - compensation
+  - pay transparency
+  - labour market
+  - job postings
+  - open data
+version: "2026-10-24"
+date-released: "2026-10-24"
