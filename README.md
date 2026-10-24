@@ -41,16 +41,16 @@ The same company can be silent on one board and transparent on another, so any a
 
 | Company | Postings with pay | Median |
 | --- | ---: | ---: |
-| anthropic | 588 | $347,500 |
-| openai | 632 | $307,500 |
+| anthropic | 589 | $347,500 |
+| openai | 631 | $307,500 |
 | cohere | 78 | $257,500 |
 | perplexity | 110 | $245,000 |
 | vercel | 71 | $245,000 |
 | render | 34 | $242,000 |
-| figma | 80 | $236,000 |
+| figma | 79 | $236,000 |
 | faire | 69 | $232,750 |
 | baseten | 101 | $230,000 |
-| vanta | 47 | $229,000 |
+| scaleai | 116 | $229,800 |
 
 ## How to use it
 
