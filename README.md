@@ -1,6 +1,6 @@
 # Public salary ranges from 266 companies (open dataset)
 
-**8,040 job postings that state a pay range**, harvested from the public job boards of 266 companies, normalised to annual USD. Snapshot: **2026-10-24**.
+**8,039 job postings that state a pay range**, harvested from the public job boards of 266 companies, normalised to annual USD. Snapshot: **2026-10-24**.
 
 This repository is the raw data + licence for the dataset published at
 <https://sjdfi0wjvosdju9.github.io/salary-data.html>. It is refreshed weekly from the same pipeline.
@@ -9,7 +9,7 @@ This repository is the raw data + licence for the dataset published at
 
 | File | Rows | Size | What it is |
 | --- | ---: | ---: | --- |
-| `data/salary-ranges-full.csv` | 8,040 | ~1.7 MB | one row per posting that publishes a range |
+| `data/salary-ranges-full.csv` | 8,039 | ~1.7 MB | one row per posting that publishes a range |
 
 Columns: `company, ats, title, location, remote, role_family, salary_usd_low, salary_usd_high, salary_usd_mid, posted_at, url, salary_currency, salary_local_low, salary_local_high`.
 
@@ -17,19 +17,19 @@ Columns: `company, ats, title, location, remote, role_family, salary_usd_low, sa
 
 | Metric | Value |
 | --- | ---: |
-| Companies with at least one paid posting | **165** |
-| Postings scanned | 18,670 |
-| Postings that state a salary | **8,040** (43.1%) |
+| Companies with at least one paid posting | **166** |
+| Postings scanned | 18,668 |
+| Postings that state a salary | **8,039** (43.1%) |
 | Median | **$200,000** |
-| p25 / p75 / p90 | $150,000 / $253,000 / $323,500 |
-| Remote share | 28.0% (remote median $190,781 vs on-site $204,000) |
+| p25 / p75 / p90 | $150,000 / $253,000 / $323,000 |
+| Remote share | 28.0% (remote median $190,794 vs on-site $204,000) |
 
 **Who publishes pay at all** — this is the part most datasets hide:
 
 | Board | Postings | With salary | Rate |
 | --- | ---: | ---: | ---: |
-| greenhouse | 11,562 | 5,134 | **44.4%** |
-| ashby | 5,357 | 2,742 | **51.2%** |
+| greenhouse | 11,561 | 5,133 | **44.4%** |
+| ashby | 5,356 | 2,742 | **51.2%** |
 | lever | 1,751 | 164 | **9.4%** |
 
 The same company can be silent on one board and transparent on another, so any average computed without these denominators is biased.
