@@ -1,6 +1,6 @@
 # Public salary ranges from 266 companies (open dataset)
 
-**8,042 job postings that state a pay range**, harvested from the public job boards of 266 companies, normalised to annual USD. Snapshot: **2026-10-24**.
+**8,049 job postings that state a pay range**, harvested from the public job boards of 266 companies, normalised to annual USD. Snapshot: **2026-10-26**.
 
 This repository is the raw data + licence for the dataset published at
 <https://sjdfi0wjvosdju9.github.io/salary-data.html>. It is refreshed weekly from the same pipeline.
@@ -9,31 +9,32 @@ This repository is the raw data + licence for the dataset published at
 
 | File | Rows | Size | What it is |
 | --- | ---: | ---: | --- |
-| `data/salary-ranges-full.csv` | 8,042 | ~1.7 MB | one row per posting that publishes a range |
+| `data/salary-ranges-full.csv` | 8,049 | ~1.7 MB | one row per posting that publishes a range |
 | `data/publication-by-company.csv` | 146 | 4 KB | per-company disclosure rate (same denominator as numerator) |
 | `data/freshness.json` | — | 10 KB | how old the postings are, by board and company |
 | `data/lookup.json` | 152 | 37 KB | per-company medians, ready for a UI |
 
 Columns: `company, ats, title, location, remote, role_family, salary_usd_low, salary_usd_high, salary_usd_mid, posted_at, url, salary_currency, salary_local_low, salary_local_high`.
 
-## Numbers (as of 2026-10-24)
+## Numbers (as of 2026-10-26)
 
 | Metric | Value |
 | --- | ---: |
 | Companies with at least one paid posting | **166** |
-| Postings scanned | 18,671 |
-| Postings that state a salary | **8,042** (43.1%) |
+| Postings scanned | 18,758 |
+| Postings that state a salary | **8,049** (42.9%) |
 | Median | **$200,000** |
-| p25 / p75 / p90 | $150,000 / $253,000 / $323,500 |
+| p25 / p75 / p90 | $150,000 / $253,000 / $323,000 |
 | Remote share | 28.0% (remote median $190,781 vs on-site $204,000) |
 
 **Who publishes pay at all** — this is the part most datasets hide:
 
 | Board | Postings | With salary | Rate |
 | --- | ---: | ---: | ---: |
-| greenhouse | 11,561 | 5,134 | **44.4%** |
-| ashby | 5,359 | 2,744 | **51.2%** |
-| lever | 1,751 | 164 | **9.4%** |
+| greenhouse | 11,568 | 5,143 | **44.5%** |
+| ashby | 5,353 | 2,741 | **51.2%** |
+| lever | 1,752 | 165 | **9.4%** |
+| workable | 85 | 0 | **0.0%** |
 
 The same company can be silent on one board and transparent on another, so any average computed without these denominators is biased.
 
@@ -41,10 +42,10 @@ The same company can be silent on one board and transparent on another, so any a
 
 | Company | Postings with pay | Median |
 | --- | ---: | ---: |
-| anthropic | 589 | $347,500 |
-| openai | 632 | $307,500 |
+| anthropic | 591 | $345,000 |
+| openai | 629 | $307,500 |
 | cohere | 78 | $257,500 |
-| perplexity | 110 | $245,000 |
+| perplexity | 111 | $245,000 |
 | vercel | 71 | $245,000 |
 | render | 34 | $242,000 |
 | figma | 79 | $236,000 |
