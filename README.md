@@ -31,8 +31,8 @@ Columns: `company, ats, title, location, remote, role_family, salary_usd_low, sa
 
 | Board | Postings | With salary | Rate |
 | --- | ---: | ---: | ---: |
-| greenhouse | 11,423 | 5,080 | **44.5%** |
-| ashby | 5,413 | 2,796 | **51.7%** |
+| greenhouse | 11,424 | 5,080 | **44.5%** |
+| ashby | 5,412 | 2,796 | **51.7%** |
 | lever | 1,700 | 172 | **10.1%** |
 | workable | 81 | 0 | **0.0%** |
 
