@@ -1,6 +1,6 @@
 # Public salary ranges from 266 companies (open dataset)
 
-**8,048 job postings that state a pay range**, harvested from the public job boards of 266 companies, normalised to annual USD. Snapshot: **2026-11-09**.
+**8,046 job postings that state a pay range**, harvested from the public job boards of 266 companies, normalised to annual USD. Snapshot: **2026-11-16**.
 
 This repository is the raw data + licence for the dataset published at
 <https://sjdfi0wjvosdju9.github.io/salary-data.html>. It is refreshed weekly from the same pipeline.
@@ -9,32 +9,32 @@ This repository is the raw data + licence for the dataset published at
 
 | File | Rows | Size | What it is |
 | --- | ---: | ---: | --- |
-| `data/salary-ranges-full.csv` | 8,048 | ~1.7 MB | one row per posting that publishes a range |
+| `data/salary-ranges-full.csv` | 8,046 | ~1.7 MB | one row per posting that publishes a range |
 | `data/publication-by-company.csv` | 146 | 4 KB | per-company disclosure rate (same denominator as numerator) |
 | `data/freshness.json` | — | 10 KB | how old the postings are, by board and company |
 | `data/lookup.json` | 152 | 37 KB | per-company medians, ready for a UI |
 
 Columns: `company, ats, title, location, remote, role_family, salary_usd_low, salary_usd_high, salary_usd_mid, posted_at, url, salary_currency, salary_local_low, salary_local_high`.
 
-## Numbers (as of 2026-11-09)
+## Numbers (as of 2026-11-16)
 
 | Metric | Value |
 | --- | ---: |
-| Companies with at least one paid posting | **167** |
-| Postings scanned | 18,617 |
-| Postings that state a salary | **8,048** (43.2%) |
-| Median | **$200,000** |
-| p25 / p75 / p90 | $150,000 / $255,500 / $323,000 |
-| Remote share | 28.8% (remote median $191,250 vs on-site $205,000) |
+| Companies with at least one paid posting | **166** |
+| Postings scanned | 18,644 |
+| Postings that state a salary | **8,046** (43.2%) |
+| Median | **$200,318** |
+| p25 / p75 / p90 | $150,000 / $257,700 / $324,000 |
+| Remote share | 28.7% (remote median $192,740 vs on-site $205,000) |
 
 **Who publishes pay at all** — this is the part most datasets hide:
 
 | Board | Postings | With salary | Rate |
 | --- | ---: | ---: | ---: |
-| greenhouse | 11,424 | 5,080 | **44.5%** |
-| ashby | 5,412 | 2,796 | **51.7%** |
-| lever | 1,700 | 172 | **10.1%** |
-| workable | 81 | 0 | **0.0%** |
+| greenhouse | 11,383 | 5,079 | **44.6%** |
+| ashby | 5,510 | 2,807 | **50.9%** |
+| lever | 1,682 | 160 | **9.5%** |
+| workable | 69 | 0 | **0.0%** |
 
 The same company can be silent on one board and transparent on another, so any average computed without these denominators is biased.
 
@@ -42,16 +42,16 @@ The same company can be silent on one board and transparent on another, so any a
 
 | Company | Postings with pay | Median |
 | --- | ---: | ---: |
-| anthropic | 580 | $345,000 |
-| openai | 650 | $307,500 |
-| cohere | 87 | $250,000 |
-| baseten | 95 | $245,000 |
+| anthropic | 570 | $345,000 |
+| openai | 664 | $307,500 |
+| perplexity | 120 | $247,500 |
+| cohere | 86 | $245,731 |
+| baseten | 97 | $245,000 |
 | vercel | 68 | $245,000 |
-| vanta | 48 | $243,500 |
-| perplexity | 116 | $242,500 |
-| render | 33 | $242,000 |
+| render | 36 | $242,000 |
+| vanta | 48 | $240,500 |
 | anyscale | 21 | $240,000 |
-| figma | 83 | $236,000 |
+| faire | 68 | $232,750 |
 
 ## How to use it
 
